@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Art | Everyday Art</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <img src="images/everyday-art-logo.png" alt="Everyday Art home" />
+        </a>
+        <nav>
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="artists.html">Artists</a>
+    <a href="about.html">About</a>
+    <a href="submit.html">Submit Art</a>
+</nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <h1>Share Your Art</h1>
+        <p>
+          Whether you've created art or discovered a piece you love, we'd love
+          to hear from you! Share your own artwork or tell us about something
+          inspiring you've found in your neighborhood, while traveling, or in
+          everyday life.
+        </p>
+      </section>
+
+      <section class="submission-form">
+        <h2>Artwork Submission</h2>
+        <form action="#" method="post">
+          <label for="artist-name">Your name</label>
+          <input type="text" id="artist-name" name="artist-name" required />
+
+          <label for="artist-email">Email address</label>
+          <input type="email" id="artist-email" name="artist-email" required />
+
+          <label for="art-title">Artwork title</label>
+          <input type="text" id="art-title" name="art-title" required />
+
+          <label for="art-artist-name">Artist name</label>
+          <input type="text" id="art-artist-name" name="artist-name" required />
+
+          <label for="art-image">Upload your artwork</label>
+          <input
+            type="file"
+            id="art-image"
+            name="art-image"
+            accept="image/*"
+            required
+          />
+
+          <label for="art-type">Type of artwork</label>
+          <select id="art-type" name="art-type" required>
+            <option value="">Choose a category</option>
+            <option value="painting">Painting or drawing</option>
+            <option value="photography">Photography</option>
+            <option value="sculpture">Sculpture</option>
+            <option value="architecture">Architecture</option>
+            <option value="digital">Digital art</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="art-description">Tell us about your artwork</label>
+          <textarea
+            id="art-description"
+            name="art-description"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit">Submit Artwork</button>
+        </form>
+        <p>
+          Note: This demonstration form does not send submissions to a server.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Everyday Art | Discover. Share. Inspire.</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </footer>
+  </body>
+</html>

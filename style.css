@@ -1,0 +1,569 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f5f0;
+  color: #252525;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #283845;
+  padding: 18px 7%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo img {
+  width: 330px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background-color: #4f6875;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #d9a441;
+  color: #252525;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 6%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 55px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+}
+
+.hero-image {
+  flex: 1.2;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.featured {
+  margin-bottom: 60px;
+}
+
+.featured h2,
+.artist-spotlight h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.artwork-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.artwork-card {
+  flex: 1;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.artwork-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.artwork-card h3 {
+  margin-bottom: 5px;
+}
+
+.artwork-card p {
+  margin-top: 5px;
+}
+
+.artist-spotlight {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #e7e0d4;
+  padding: 35px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.artist-spotlight > div {
+  flex: 1;
+}
+
+.artist-spotlight img {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #283845;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #d9a441;
+}
+.hero-slideshow {
+  width: 100%;
+}
+
+.hero-slideshow img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hero-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.hero-controls button {
+  padding: 8px 16px;
+  background-color: #283845;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-controls button:hover {
+  background-color: #496779;
+}
+.artwork-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.artwork-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.page-intro {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 20px;
+}
+
+.page-intro h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.page-intro p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Artwork submission form */
+.submission-form {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.submission-form h2 {
+  margin-top: 0;
+  color: #283845;
+}
+
+.submission-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.submission-form label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.submission-form input,
+.submission-form select,
+.submission-form textarea {
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #a9a9a9;
+  border-radius: 4px;
+}
+
+.submission-form textarea {
+  resize: vertical;
+}
+
+.submission-form button {
+  align-self: flex-start;
+  margin-top: 12px;
+  padding: 12px 22px;
+  background-color: #283845;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.submission-form button:hover {
+  background-color: #d9a441;
+  color: #252525;
+}
+
+.submission-form input:focus,
+.submission-form select:focus,
+.submission-form textarea:focus {
+  outline: 2px solid #4f6875;
+  outline-offset: 2px;
+}
+
+/* Tablet screens */
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 18px 4%;
+  }
+
+  .header-content {
+    gap: 20px;
+  }
+
+  .logo img {
+    width: 260px;
+    max-width: 100%;
+  }
+
+  nav {
+    gap: 8px;
+  }
+
+  nav a {
+    padding: 9px 12px;
+  }
+
+  main {
+    padding: 30px 4%;
+  }
+
+  .hero {
+    gap: 25px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .artwork-container {
+    gap: 15px;
+  }
+
+  .artist-spotlight {
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .artist-spotlight img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 700px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .logo img {
+    width: 300px;
+    max-width: 85vw;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav a {
+    padding: 9px 12px;
+  }
+
+  main {
+    padding: 25px 5%;
+  }
+
+  .hero,
+  .artwork-container,
+  .artist-spotlight {
+    flex-direction: column;
+  }
+
+  .hero {
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-slideshow img {
+    height: 240px;
+  }
+
+  .artwork-card {
+    width: 100%;
+  }
+
+  .artwork-card img {
+    height: 220px;
+  }
+
+  .artist-spotlight {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .artist-spotlight img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .submission-form {
+    padding: 20px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 400px) {
+  .logo img {
+    width: 85vw;
+  }
+
+  nav {
+    gap: 6px;
+  }
+
+  nav a {
+    padding: 8px 9px;
+    font-size: 0.9rem;
+  }
+
+  .hero-slideshow img {
+    height: 200px;
+  }
+
+  .hero-controls button {
+    padding: 8px 12px;
+  }
+
+  .artist-spotlight {
+    padding: 15px;
+  }
+
+  .submission-form {
+    padding: 15px;
+  }
+}
+
+/* Explore page categories */
+.category-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0 45px;
+}
+
+.category-links a {
+    background-color: #283845;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.category-links a:hover {
+    background-color: #d9a441;
+    color: #252525;
+}
+
+.explore-category {
+    margin-bottom: 55px;
+    scroll-margin-top: 20px;
+}
+
+.explore-category h2 {
+    color: #283845;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.explore-category > p {
+    margin-bottom: 22px;
+}
+
+.explore-category .artwork-card {
+    min-width: 0;
+}
+
+.explore-invitation {
+    text-align: center;
+    padding: 25px;
+    background-color: #e7e0d4;
+    border-radius: 8px;
+}
+
+.explore-invitation a {
+    color: #283845;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .category-links {
+        gap: 8px;
+    }
+
+    .category-links a {
+        padding: 9px 12px;
+        font-size: 0.95rem;
+    }
+
+    .explore-category {
+        margin-bottom: 40px;
+    }
+}
+
+/* Artists page invitation */
+.artist-invitation {
+    text-align: center;
+    background-color: #e7e0d4;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.artist-invitation h2 {
+    color: #283845;
+    margin-top: 0;
+}
+
+.artist-invitation p {
+    max-width: 750px;
+    margin: 0 auto 22px;
+}
+
+.artist-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.artist-links a {
+    display: inline-block;
+    background-color: #283845;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 4px;
+}
+
+.artist-links a:hover {
+    background-color: #d9a441;
+    color: #252525;
+}
+
+/* Nancy's artwork collage */
+.artist-image .nancy-artwork {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
